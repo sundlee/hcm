@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url("normalize.css");
-@import url("./reset.css");
+@import url("reset.css");
 
 /* 기본 스타일 */
 html {
@@ -18,13 +18,32 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* a:link {
-  color: green;
+/* 공통 스타일 */
+
+/* 모바일 스타일 */
+@media screen and (min-width: 320px) and (max-width: 999px) {
+  /*  모바일 헤더 */
+  .header {
+    background: #38302e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo,
+  .member,
+  .search-form {
+    width: 100%;
+  }
+
+  /* 모바일 멤버링크 */
+  .member {
+    background: #988574;
+    order: -1;
+  }
 }
-a:visited {
-  color: grey;
+
+/* 데스크탑 스타일 */
+@media screen and (min-width: 1000px) {
 }
-a:hover,
-a:focus {
-  color: red;
-} */
