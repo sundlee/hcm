@@ -103,6 +103,9 @@ legend,
     flex-direction: row;
     justify-content: flex-end;
   }
+  .member .bar {
+    display: none;
+  }
   .member a {
     display: inline-block;
     padding: 0.5em 1em;
@@ -159,4 +162,66 @@ legend,
 
 /* 데스크탑 스타일 */
 @media screen and (min-width: 1000px) {
+  /* 데스크탑 헤더 */
+  .header {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    /* background: yellow; */
+  }
+  /* 데스크탑 로고 */
+  .logo {
+    /* background: blue; */
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -29px;
+    /* display: none; */
+  }
+  /* 데스크탑 멤버링크 */
+  .member {
+    /* background: pink; */
+    text-align: right;
+    padding: 2px 0;
+    position: relative;
+    right: -10px;
+  }
+  .member li, .member a {
+    /* background: orange; */
+    display: inline-block;
+  }
+  /* .member li:nth-child(n+2)::before {
+    content: "|";
+  } */
+  .member a {
+    /* background: orange; */
+    padding: 0.5em 10px;
+    margin-left: 3px;
+  }
+  /* 데스크탑 검색창 */
+  .search-form {
+    /* background: green; */
+    text-align: right;
+  }
+  .search-form input[type="search"] {
+    /* background: skyblue; */
+    width: 400px;
+    height: 35px;
+    border: 1px solid #999;
+    padding: 1px 1px 1px 5px;
+    border-radius: 5px;
+  }
+  .btn-search {
+    height: 35px;
+    border: 1px solid #999;
+    padding: 1px 1em;
+    background: #988574;
+    color: #fff;
+    border-radius: 5px;
+    /* transition: border-radius 0.6s; */
+  }
+  /* .btn-search:hover, .btn-search:focus {
+    border-radius: 0 15px 0 15px;
+  } */
 }
+
