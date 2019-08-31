@@ -26,12 +26,12 @@ a{
 /* 공통 스타일 */
 legend, .a11y-hidden{
   position: absolute;
-  top: -9999em;
-  /* width: 1px;
+  /* top: -9999em; */
+  width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0,0,0,0);
-  margin: -1px; */
+  margin: -1px;
 }
 .responsive-wrap{
   display: grid;
@@ -118,6 +118,92 @@ legend, .a11y-hidden{
   display: block;
   text-align: right;
 }
+
+/* 공통 게시판 */
+.board{
+  position: relative;
+}
+.board-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.board-list a{
+  width: calc(100% - 100px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-more{
+  position: absolute;
+  right: 0;
+}
+.board-more::before{
+  color: #abd375;
+}
+/* 공통 인기 사이트 */
+.favorite-site-list{
+  list-style-type: none;
+  counter-reset: 0;
+}
+.favorite-site-list li{
+  counter-increment: number;
+  line-height: 2;
+  margin-bottom: 5px;
+}
+.favorite-site-list li:before{
+  content: counter(number);
+  color: #fff;
+  background: #eea60a;
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+/* 공통 트위터 */
+.twitter{
+  position: relative;
+}
+.twitter-user-name{
+  color: #6aaee6;
+}
+.twitter-user-name,
+.twitter-user-id{
+  display: inline-block;
+}
+.twitter-profile{
+  width: 25%;
+  position: absolute;
+  right: 0;
+  padding-left: 1em;
+  text-align: right;
+}
+.twitter-profile img{
+  border-radius: 50%;
+  border: 1px solid #333;
+  padding: 10px;
+}
+.twitter-summary{
+  line-height: 1.5;
+}
+.twitter-date{
+  /* display: block;
+  text-align: right; */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* 공통 푸터 */
+.footer{
+  background:#988574;
+  padding: 25px 20px;
+  color: #fff;
+}
+.address .copyright{
+  margin: 20px 0;
+}
+
 /* Small 디바이스 스타일 */
 @media screen and (max-width: 319px){
   .header{
@@ -155,6 +241,10 @@ legend, .a11y-hidden{
     background-size: 100%;
     width: 100%;
     height: 100%;
+  }
+  /* 데스크탑 게시판 */
+  .board-more{
+    top: 15px;
   }
 }
 
@@ -323,16 +413,43 @@ legend, .a11y-hidden{
   .menu-act .sub-menu{
     display: block;
   }
+  /* 모바일 메일 콘텐츠 */
+  .main{
+    padding: 0 20px;
+  }
   /* 모바일 추천 서적 */
   .recommend-book-cover{
     width: 50%;
+  }
+  /* 모바일 게시판 */
+  .board-more{
+    top: 0;
+  }
+  /* 모바일 트위터 */
+  .twitter-profile{
+    top: 0;
+  }
+  .twitter-summary{
+    padding-bottom: 20px;
+  }
+  /* 모바일 슬로건 */
+  .slogan{
+    padding: 15px 20px;
+    line-height: 1.5;
+  }
+  .slogan-heading{
+    display: none;
+  }
+  /* 모바일 푸터 */
+  .footer span{
+    margin: 20px;
   }
 }
 
 /* 데스크탑 스타일 */
 @media screen and (min-width: 1000px){
   /* 데스크탑 레이아웃 */
-  .header, .menu, .main{
+  .header, .menu, .main, .slogan{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -434,7 +551,7 @@ legend, .a11y-hidden{
   /* 데스크탑 메인 콘텐츠 */
   .main{
     /* background: yellow; */
-    height: 600px;
+    min-height: 600px;
     display: grid;
     grid-template-columns: repeat(12, 65px);
     grid-template-rows: auto auto;
@@ -500,5 +617,53 @@ legend, .a11y-hidden{
   /* 데스크탑 추천서적 */
   .recommend-book-cover{
     width: 80%;
+  }
+  /* 데스크탑 게시판 */
+  .board-more{
+    top: 15px;
+  }
+  /* 데스크탑 트위터 */
+  .twitter-profile{
+    top: 100px;
+  }
+  /* 데스크탑 슬로건 */
+  .slogan{
+    padding: 15px 50px 15px 150px;
+    position: relative;
+  }
+  .slogan-heading{
+    width: 110px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 25px;
+  }
+  .slogan-heading::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/coffee.png') no-repeat;
+  }
+  .slogan-content{
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  .slogan-content q::before{
+    font-size: 3rem;
+    position: relative;
+    top: 10px;
+  }
+  .slogan-content q::after{
+    content: "";
+  }
+  /* 데스크탑 푸터 */
+  .footer{
+    text-align: center;
   }
 }

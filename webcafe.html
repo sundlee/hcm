@@ -124,7 +124,7 @@
           새소식 <span class="en-heading">web cafe news</span>
         </h2>
         <figure class="news-container">
-          <video autoplay muted loop class="news-video responsive" poster="media/poster.jpg" controls>
+          <video muted loop class="news-video responsive" poster="media/poster.jpg" controls>
             <source src="media/stories.mp4" type="video/mp4">
             <track src="media/stories-en.vtt" kind="captions" srclang="en" label="English Caption">
           </video>
@@ -142,19 +142,96 @@
         </time>
       </section>
       <section class="main-content board">
-        <h2 class="main-content-heading boarding-heading">게시판<span class="en-heading">web cafe board</span></h2>
+        <h2 class="main-content-heading boarding-heading" id="board">
+          <span>게시판</span>
+          <span class="en-heading">WebCafe Board</span>
+        </h2>
+        <ul class="board-list">
+          <li class="icon-star">
+            <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">KWCAG 2.1 소식</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+            <time datetime="2018-04-04T12:34:12">2018.04.03</time>
+          </li>
+        </ul>
+        <a href="#" class="board-more icon-plus" aria-labelledby="board">더보기</a>
       </section>
       <section class="main-content favorite-site">
-        <h2 class="main-content-heading favorite-heading">인기페이지<span class="en-heading">favorite site</span></h2>
+        <h2 class="main-content-heading favorite-heading">
+          인기 사이트<span class="en-heading">Favorite Site</span>
+        </h2>
+        <ol class="favorite-site-list">
+          <li>
+            <a href="http://ko.learnlayout.com/" target="_blank">Learn CSS Layout</a>
+          </li>
+          <li>
+            <a href="http://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a>
+          </li>
+          <li>
+            <a href="http://cssgridgarden.com/" target="_blank">CSS Grid Garden</a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ko/" target="_blank">MDN Web Docs</a>
+          </li>
+        </ol>
       </section>
       <article class="main-content twitter">
         <h2 class="main-content-heading twitter-heading">트위터<span class="en-heading">web cafe twitter</span></h2>
+        <dl class="twitter-user-info">
+          <dt class="a11y-hidden">사용자 이름</dt>
+          <dd class="twitter-user-name">김데레사</dd>
+          <dt class="a11y-hidden">사용자 아이디</dt>
+          <dd class="twitter-user-id">
+            <a href="http://twitter.com/seulbinim">@seulbinim</a>
+          </dd>
+        </dl>
+        <figure class="twitter-profile">
+          <img src="images/seulbinim.jpg" alt="" class="twitter-thumbnail responsive">
+          <figcaption class="a11y-hidden">사용자 프로필</figcaption>
+        </figure>
+        <p class="twitter-summary">
+          웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+        </p>
+        <time class="twitter-date icon-calendar" datetime="2018-04-03T16:09:28">2018.04.03</time>
       </article>
     </main>
-    <article class="slogan">슬로건</article>
-    <div class="footer-bg">
-      <footer class="footer">푸터</footer>
-    </div>
+    <article class="slogan">
+      <h2 class="slogan-heading" title="웹카페에서 웹표준을">
+        슬로건
+      </h2>
+      <p class="slogan-content">
+        <q cite="http://w3.org/WAI">The power of the Web is in its universality, Access by everyone regardless
+          of disability is an essential aspect.</q>
+        Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+      </p>
+      <footer class="a11y-hidden">
+        출처 : W3C - Web Accessibility Initiative
+      </footer>
+    </article>
+    <footer class="footer">
+      <address class="address">
+        <span>서울 성동구 성수이로 113 제강빌딩 8층</span>
+        <span>전화: <a href="tel:025019396">02-501-9396</a></span>
+        <span>이메일: <a href="mailto:seulbinim@gmail.com?subject=문의사항">seulbinim@gmail.com</a></span>
+      </address>
+      <small class="copyright">
+        Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.
+      </small>
+    </footer>
   </div>
 </body>
 
