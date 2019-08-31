@@ -34,9 +34,9 @@ legend,
   display: block;
 }
 /* 반응형 콘텐츠 */
-.responsive {
-  max-width: 100%;
-  height: auto;
+.responsive{
+    max-width: 100%;
+    height: auto;
 }
 /* 기본 스타일 */
 html {
@@ -170,10 +170,10 @@ body {
 .board-list li {
   margin-bottom: 1.1em;
 }
-.board-list li:first-child {
+.board-list li:first-child{
   margin-top: 2.5em;
 }
-.icon-star::before {
+.icon-star::before{
   position: relative;
   top: 0.05em;
 }
@@ -283,11 +283,11 @@ body {
     font-size: 1.6rem;
   }
   /* 모바일 컨테이너 */
-  .container {
-    position: relative;
+  .container{
+      position: relative;
   }
   /* 모바일 그리드 */
-  .grid-act {
+  .grid-act{
     width: 100%;
     left: 0;
     grid-template-columns: 0 repeat(4, 1fr) 0;
@@ -296,206 +296,204 @@ body {
     content: "";
   } */
   /* 모바일 헤더 */
-  .header {
-    background: #38302e;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1em;
+  .header{
+      background: #38302e;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1em;
   }
   /* 모바일 로고 */
-  .logo {
-    margin: 0;
-    padding: 0.5em 0 0.25em;
+  .logo{
+      margin: 0;
+      padding: .5em 0 .25em;
   }
   /* 모바일 멤버링크 */
-  .member {
-    background: #988574;
-    order: -1;
-    display: flex;
-    justify-content: flex-end;
-    color: #fff;
-    margin: 0 -1em;
-    padding: 0.35em 0;
+  .member{
+      background: #988574;
+      order: -1;
+      display: flex;
+      justify-content: flex-end;
+      color: #fff;
+      margin: 0 -1em;
+      padding: 0.35em 0;
   }
-  .member a {
-    display: block;
-    padding: 0.5em 1em;
+  .member a{
+      display: block;
+      padding: .5em 1em; 
   }
-  .member a:hover,
-  .member a:focus {
-    color: #ffc;
+  .member a:hover, .member a:focus{
+      color: #ffc;
   }
   /* 모바일 검색 폼 */
-  .search fieldset {
+  .search fieldset{
     padding: 0;
   }
-  input[type="search"] {
-    width: calc(100% - 40px);
-    height: 30px;
-    border: 1px solid #666;
-    border-radius: 5px;
-    margin-right: 5px;
-    padding: 1px 1px 1px 1em;
+  input[type="search"]{
+      width: calc(100% - 40px);
+      height: 30px;
+      border: 1px solid #666;
+      border-radius: 5px;
+      margin-right: 5px;
+      padding: 1px 1px 1px 1em;
   }
-  .btn-search {
+  .btn-search{
     width: 30px;
     height: 30px;
     position: relative;
     background: transparent;
   }
-  .btn-search::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background: url("images/btn_search.png") no-repeat 0 0;
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    padding: 0;
+  .btn-search::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background: url("images/btn_search.png") no-repeat 0 0;
+      background-size: 100%;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
   }
   /* 모바일 내비게이션 */
   /* 모바일 메인메뉴 제어버튼 */
-  .btn-menubar {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 4.5em;
-    right: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    background: transparent;
+  .btn-menubar{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 4.5em;
+      right: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      background: transparent;
   }
-  .menubar {
-    background: #fff;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    transition: all 200ms;
+  .menubar{
+      background: #fff;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      transition: all 200ms;
   }
-  .menubar-top {
-    top: 0;
+  .menubar-top{
+      top: 0;
   }
-  .is-act .menubar-top {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+  .is-act .menubar-top{
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
   }
-  .menubar-middle {
-    top: 50%;
-    transform: translateY(-50%);
+  .menubar-middle{
+      top: 50%;
+      transform: translateY(-50%);
   }
-  .is-act .menubar-middle {
-    transform: translate(-100%, -50%);
+  .is-act .menubar-middle{
+      transform: translate(-100%, -50%);
+}
+  .menubar-bottom{
+      top: 100%;
+      transform: translateY(-100%);
   }
-  .menubar-bottom {
-    top: 100%;
-    transform: translateY(-100%);
-  }
-  .is-act .menubar-bottom {
-    top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
-  }
-  /* 모바일 메인 메뉴 */
-  .menu {
+  .is-act .menubar-bottom{
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+}
+/* 모바일 메인 메뉴 */
+.menu{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0,0,0,.85);
     color: #fff;
     width: 70vw;
     height: 100vh;
     transform: translateX(-100%);
     transition: all 200ms;
     padding: 50px;
-  }
-  .is-act .menu {
+}
+.is-act .menu{
     transform: translateX(0);
-  }
-  .menu-item {
+}
+.menu-item{
     display: block;
     cursor: pointer;
-    padding: 0.5em 0;
-    margin: 0.5em 0;
-  }
-  .sub-menu {
+    padding: .5em 0;
+    margin: .5em 0;
+}
+.sub-menu{
     display: none;
     list-style-type: disc;
     margin-left: 3em;
-  }
-  /* .sub-menu 부모 요소인 .menu-list에 menu-act 클래스가 추가되거나
+}
+/* .sub-menu 부모 요소인 .menu-list에 menu-act 클래스가 추가되거나
    .sub-menu 형제 요소인 .menu-item에 menu-item-act 클래스가 추가될 경우 */
-  .menu-act .sub-menu,
-  .menu-item-act + .sub-menu {
+.menu-act .sub-menu,.menu-item-act + .sub-menu{
+  display: block;
+}
+.sub-menu a{
     display: block;
-  }
-  .sub-menu a {
-    display: block;
-    padding: 0.5em 0;
-    margin: 0.5em 0;
-  }
-  /* 모바일 메인 콘텐츠 */
-  .main {
+    padding: .5em 0;
+    margin: .5em 0;
+}
+/* 모바일 메인 콘텐츠 */
+.main{
     padding: 0 20px;
-  }
-  /* 모바일 메인 제목 공통 */
-  .main-section-heading {
-    margin: 1.5em 0 1em;
-  }
-  /* 모바일 추천 서적 */
-  .recommend-book .recommend-book-summary {
-    margin-top: 1.25em;
-  }
-  /* 모바일 새소식 */
-  .news .news-summary {
-    margin-top: 1.2em;
-  }
-  /* 모바일 게시판 */
-  .board {
-    position: relative;
-  }
-  .board .board-list li {
-    margin-bottom: 1.2em;
-  }
-  .board-list li::before {
-    position: relative;
-    top: 0.15em;
-  }
-  /* 모바일 인기 사이트 */
-  .favorite-site-heading {
-    margin: 2em 0 0.35em;
-  }
-  .favorite-site-list {
-    margin-left: 0.2em;
-  }
-  /* 모바일 트위터 */
-  .twitter {
-    margin-top: 1.5em;
-  }
-  /* 모바일 사용자 정보 */
-  .twitter-user-info {
-    width: 65%;
-  }
-  /* 모바일 트위터 사용자 프로필 이미지 */
-  .twitter-profile {
-    width: 30%;
-  }
-  /* 모바일 슬로건 */
-  .slogan {
+}
+/* 모바일 메인 제목 공통 */
+.main-section-heading{
+  margin: 1.5em 0 1em;
+}
+/* 모바일 추천 서적 */
+.recommend-book .recommend-book-summary{
+  margin-top: 1.25em;
+}
+/* 모바일 새소식 */
+.news .news-summary{
+  margin-top: 1.2em;
+}
+/* 모바일 게시판 */
+.board{
+  position: relative;
+}
+.board .board-list li{
+  margin-bottom: 1.2em;
+}
+.board-list li::before{
+  position: relative;
+  top: 0.15em;
+}
+/* 모바일 인기 사이트 */
+.favorite-site-heading{
+  margin: 2em 0 0.35em; 
+}
+.favorite-site-list{
+  margin-left: 0.2em;
+}
+/* 모바일 트위터 */
+.twitter{
+  margin-top: 1.5em;
+}
+/* 모바일 사용자 정보 */
+.twitter-user-info{
+  width: 65%;
+}
+/* 모바일 트위터 사용자 프로필 이미지 */
+.twitter-profile {
+  width: 30%;
+}
+/* 모바일 슬로건 */
+.slogan{
     padding: 2em 20px 1em 20px;
     line-height: 1.5;
-  }
-  /* 모바일 푸터 */
-  .footer {
-    text-align: left;
-    padding: 20px;
-  }
-  .address span {
+}
+/* 모바일 푸터 */
+.footer{
+  text-align: left;
+  padding: 20px;
+}
+.address span{
     display: block;
-  }
+}
 }
 /* 데스크탑 디바이스 */
 @media screen and (min-width: 1000px) {
@@ -503,7 +501,7 @@ body {
     font-size: 1.4rem;
   }
   /* 데스크탑 그리드 */
-  .grid-act {
+  .grid-act{
     width: 1000px;
     left: 50%;
     transform: translateX(-50%);

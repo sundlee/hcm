@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>반응형 iframe</title>
+  <style>
+    .container {
+      width: 50%;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      background: yellow;
+    }
+
+    .w1 {
+      padding-top: 56.25%;
+    }
+
+    .w2 {
+      padding-top: 100%;
+    }
+
+    .wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <figure class="wrapper w1">
+      <iframe src="https://www.youtube.com/embed/C4Eti4L8zJE" allowfullscreen></iframe>
+    </figure>
+  </div>
+  <div class="container">
+    <figure class="wrapper w2">
+    <iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" frameborder="0" style="border:0;"
+      allowfullscreen=""></iframe>
+    </figure>
+  </div>
+</body>
+
+</html>
